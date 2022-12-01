@@ -1,0 +1,8 @@
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/CMakeFiles/edit_cache.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/CMakeFiles/rebuild_cache.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/hello/CMakeFiles/hello.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/hello/CMakeFiles/edit_cache.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/hello/CMakeFiles/rebuild_cache.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/apps/CMakeFiles/main.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/apps/CMakeFiles/edit_cache.dir
+C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass1/build/apps/CMakeFiles/rebuild_cache.dir
