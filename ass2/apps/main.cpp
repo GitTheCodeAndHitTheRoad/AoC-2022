@@ -27,12 +27,16 @@ private:
 public:
     void procesLineInput(const std::string &line)
     {
-        Play OpponentPlay = FromCharToPlay(line[0]);
-        Play MyPlay = FromCharToPlay(line[2]);
-
         // part 1
+        // Play OpponentPlay = FromCharToPlay(line[0]);
+        // Play MyPlay = FromCharToPlay(line[2]);
+        // addPoints(PointsPerPlay(MyPlay, OpponentPlay));
 
         // part 2
+        Play OpponentPlay = FromCharToPlay(line[0]);
+        PlayResult outcome = FromCharToOutcome(line[2]);
+        Play MyPlay = FromGameOutcomeToPlay(OpponentPlay, outcome);
+        addPoints(PointsPerPlay(MyPlay, OpponentPlay));
     }
 
     Play FromCharToPlay(const char &c)
@@ -51,9 +55,54 @@ public:
         }
     }
 
-    void addPoints(const int &points)
+    PlayResult FromCharToOutcome(const char &c)
     {
-        myPoints = myPoints + points;
+        if (c == 'X')
+        {
+            return PlayResult::loss;
+        }
+        else if (c == 'Y')
+        {
+            return PlayResult::draw;
+        }
+        else if (c == 'Z')
+        {
+            return PlayResult::win;
+        }
+    }
+
+    Play FromGameOutcomeToPlay(const Play &OpponentPlay, const PlayResult &PlayResult)
+    {
+        if (PlayResult == PlayResult::win)
+        {
+            return GetWinningPlay(OpponentPlay);
+        }
+        else if (PlayResult == PlayResult::draw)
+        {
+            return OpponentPlay;
+        }
+        else if (PlayResult == PlayResult::loss)
+        {
+            return GetLosingPlay(OpponentPlay);
+        }
+    }
+
+    Play GetWinningPlay(const Play &OpponentPlay)
+    {
+        if (OpponentPlay == Play::scissors)
+        {
+            return static_cast<Play>(OpponentPlay - 2);
+        }
+        return static_cast<Play>(OpponentPlay + 1);
+    }
+
+    Play GetLosingPlay(const Play &OpponentPlay)
+    {
+        if (OpponentPlay == Play::rock)
+        {
+            return static_cast<Play>(OpponentPlay + 2);
+        }
+        return static_cast<Play>(OpponentPlay - 1);
     }
 
     int PointsPerPlay(const Play &MyPlay, const Play &OpponentPlay)
@@ -73,40 +122,9 @@ public:
         }
     }
 
-    Play FromGameResultToPlay(const Play &OpponentPlay, const PlayResult &PlayResult)
+    void addPoints(const int &points)
     {
-        if (PlayResult == PlayResult::win)
-        {
-            return GetWinningPlay(OpponentPlay);
-        }
-        else if (PlayResult == PlayResult::draw)
-        {
-            return OpponentPlay;
-        }
-        else if (PlayResult == PlayResult::loss)
-        {
-            return GetLosingPlay(OpponentPlay);
-        }
-    }
-
-    Play GetWinningPlay(const Play &OpponentPlay)
-    {
-        Play WinningPlay;
-        if (OpponentPlay == Play::scissors)
-        {
-            return static_cast<Play>(OpponentPlay - 2);
-        }
-        return static_cast<Play>(OpponentPlay + 1);
-    }
-
-    Play GetLosingPlay(const Play &OpponentPlay)
-    {
-        Play WinningPlay;
-        if (OpponentPlay == Play::rock)
-        {
-            return static_cast<Play>(OpponentPlay + 2);
-        }
-        return static_cast<Play>(OpponentPlay - 1);
+        myPoints = myPoints + points;
     }
 
     int getMyPoints() const
