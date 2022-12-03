@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "hello",
+					"jsonFile" : "directory-hello-Debug-b8261041e6cd21986be3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "hello",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "apps",
+					"jsonFile" : "directory-apps-Debug-12c899f314185723a34a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "apps",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "VscodeCmakeHello"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "hello",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "main",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "hello::@3338be694f50c5f33881",
+					"jsonFile" : "target-hello-Debug-f7a9a1ca11ebc90d11ea.json",
+					"name" : "hello",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@9e189ee61a034fc9b705",
+					"jsonFile" : "target-main-Debug-06d928a3c8e2515fc8ce.json",
+					"name" : "main",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass2/build",
+		"source" : "C:/Users/nickw/OneDrive/Bureaublad/pf-pg/ont/AdventOfCode/2022/ass2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
