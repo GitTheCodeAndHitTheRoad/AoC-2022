@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.11-3.18)
+
+project(
+    VscodeCmakeHello
+    VERSION 0.1
+    DESCRIPTION "Small CMake example built with VSCode")
+
+add_subdirectory(hello)   # look in hello subdirectory for CMakeLists.txt to process
+add_subdirectory(apps)    # look in apps subdirectory for CMakeLists.txt to process

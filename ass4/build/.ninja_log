@@ -1,0 +1,16 @@
+# ninja log v5
+7	607	6918894146787253	hello/CMakeFiles/hello.dir/src/hello.cpp.obj	c57c5a8ee3a7c7b6
+18	816	6918894148932057	hello/CMakeFiles/hello.dir/src/md5.cpp.obj	11293cf11236c405
+817	1139	6918894152126948	hello/libhello.a	6ec37a1deaf4f15a
+11	876	6918896503451173	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+878	1318	6918896507877019	apps/main.exe	cbac2755263331b
+11	995	6918902821437559	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+998	1261	6918902824103374	apps/main.exe	cbac2755263331b
+14	1101	6918903170797481	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+1103	1309	6918903172847800	apps/main.exe	cbac2755263331b
+13	1067	6918906753147688	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+1070	1359	6918906756057324	apps/main.exe	cbac2755263331b
+11	963	6918908636191242	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+966	1302	6918908639601098	apps/main.exe	cbac2755263331b
+13	1153	6918909055330551	apps/CMakeFiles/main.dir/main.cpp.obj	f3bec1e6ff644ee4
+1154	1375	6918909057530551	apps/main.exe	cbac2755263331b
